@@ -1,0 +1,25 @@
+import numpy as np
+import matplotlib.pylab as plt
+
+vector1=np.array([1,2,3,4,5]) #5 elementos
+vector2=np.array([6,7,8,9,10]) #5 elementos
+print(vector1+vector2)
+
+vector3=np.array([11,12,13,14,15,16]) #6 elementos
+vector4=np.array([17,18,19,20,21]) #5 elementos
+print(vector3+vector4)
+
+vector5=np.array([22,23,24,25,26]) #5 elementos
+vector6=np.array([27,28,29,30,31,32]) #6 elementos
+print(vector5+vector6)
+
+x = np.linspace(-1, 1, 50)
+y1 = 2*x
+y2 = 2*(x)**2 + 1
+y3 = 2*(x)**3 - 2
+ 
+plt.figure(num='MiPrimerGrafico')
+plt.plot(x, y1)
+plt.plot(x, y2)
+plt.plot(x, y3)
+plt.show()
